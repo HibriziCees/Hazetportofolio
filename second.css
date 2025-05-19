@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #3d3bf3, #261FB3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.all {
+  background-color: #e9ecef;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main-info button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #495057;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-size: 14px;
+}
+
+.main-info button:hover {
+  border: 2px solid #3D3BF3;
+  background-color: #f0f4ff
+}
+
+.main-info button a {
+  color: #495057;
+  text-decoration: none;
+}
+
+.main-info i {
+  font-size: 18px;
+}
+
+/* Warna ikon khusus */
+.bxl-instagram {
+  color: #E1306C;
+}
+
+.bxl-whatsapp {
+  color: #25D366;
+}
+
+.bxl-gmail {
+  color: #EA4335;
+}
+
+.back-btn {
+  background-color: #868e96;
+}
+
+.back-btn:hover {
+  background-color: #6c757d;
+}
+
+.back-btn i {
+  color: #495057;
+}
+
+/* Responsif */
+@media screen and (max-width: 480px) {
+  .all {
+      padding: 20px;
+      border-radius: 16px;
+  }
+
+  .profile-pic {
+      width: 90px;
+      height: 90px;
+  }
+
+  .main-info button {
+      font-size: 13px;
+      padding: 10px 16px;
+  }
+
+  .main-info i {
+      font-size: 16px;
+  }
+}
