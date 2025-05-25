@@ -615,7 +615,7 @@ nav{
   flex-wrap: wrap;
 }
 
-.top-contact, h1{
+.top-contact {
   font-size: 30px;
   margin-bottom: 30px;
   margin-top: 70px;

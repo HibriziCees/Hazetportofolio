@@ -198,15 +198,22 @@
           <div class="top-contact">
             <h1>Contact Me</h1>
           </div>
-            <form class="contact-form" action="mailto:iziahmad536@gmail.com" method="post" enctype="text/plain">
-              <div class="input-row">
-                <input type="text" name="Name" placeholder="Name" required>
-                <input type="email" name="Email" placeholder="Email" required>
-              </div>
-              <textarea name="Message" placeholder="Message" required></textarea>
-              <button type="submit">Send</button>
-            </form>
-          </div>
+        <div>
+          <form class="contact-form" action="https://formsubmit.co/iziahmad536@gmail.com" method="POST">
+            <div class="input-row">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <textarea name="message" placeholder="Message" required></textarea>
+          
+            <input type="hidden" name="_next" value="https://ahmadhibrizi.github.io/contact-form/thank-you.html">
+          
+            <input type="hidden" name="_captcha" value="false">
+          
+            <button type="submit">Send</button>
+          </form>
+        </div>
+          
         </section>
 
         <footer>
