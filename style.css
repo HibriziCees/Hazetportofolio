@@ -615,91 +615,90 @@ nav{
   flex-wrap: wrap;
 }
 
-/* Info Section */
-.contact-info {
-  flex: 1 1 300px;
-}
-
-.contact-info h2 {
+.top-contact, h1{
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  text-align: center;
   color: #3D3BF3;
-  margin-bottom: 15px;
+
 }
 
-.info-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.info-item i {
-  font-size: 24px;
-  color: #3D3BF3;
-  margin-right: 10px;
-}
-
-.info-item p {
-  font-size: 16px;
-  color: #495057;
-}
-
-/* Form Section */
 .contact-form {
-  flex: 1 1 300px;
-  display: flex;
-  flex-direction: column;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .input-row {
   display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
   flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .input-row input {
-  flex: 1 1 45%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #f1f3f5;
+  color: #495057;
 }
 
 textarea {
-  padding: 10px;
-  height: 150px;
-  resize: none;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #f1f3f5;
+  color: #495057;
+  resize: vertical;
+  min-height: 120px;
+  margin-bottom: 16px;
 }
 
 button {
   background-color: #3D3BF3;
-  color: white;
-  padding: 12px;
+  color: #ffffff;
   border: none;
-  border-radius: 5px;
+  padding: 12px 24px;
+  border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #2c2ae0;
+  background-color: #2a2ae0;
 }
 
-@media (max-width: 992px) {
-  .container-contact {
+/* Responsive styles */
+@media (max-width: 768px) {
+  .input-row {
     flex-direction: column;
-    align-items: center;
   }
+}
 
-  .contact-info,
+@media (max-width: 480px) {
   .contact-form {
-    width: 100%;
+    padding: 16px;
   }
 
-  .input-row input {
-    flex: 1 1 100%;
+  .input-row input,
+  textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 15px;
   }
 }
 
