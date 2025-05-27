@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #3d3bf3, #261FB3);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+
+  h1 {
+    text-align: center;
+    color: #3D3BF3;
+    font-size: 20px;
+    margin-bottom: 24px;
+    
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    color: #868e96;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 16px;
+  }
+  
+  input,
+  textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    resize: vertical;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #3D3BF3;
+    outline: none;
+  }
+  
+
+  button {
+    padding: 14px;
+    background-color: #3D3BF3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2c2ae0;
+  }
+  
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 16px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    button {
+      font-size: 15px;
+    }
+  }
+  
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .container {
+      padding: 28px;
+    }
+  
+    h1 {
+      font-size: 26px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  }
+  
+
+  @media (min-width: 769px) {
+    .container {
+      padding: 40px;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    button {
+      font-size: 17px;
+    }
+  }
+  

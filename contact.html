@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="Desain Logo Final v2-01.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" target="_blank"><h1>Contact Me</h1></a>
+        <form action="https://formsubmit.co/iziahmad536@gmail.com" method="POST">
+          <div>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Name" required />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Email" required />
+          </div>
+          <input type="hidden" name="_next" value="https://ahmadhibrizi.github.io/contact-form/thank-you.html">
+          
+            <input type="hidden" name="_captcha" value="false">
+          <div>
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="5" placeholder="message" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+</body>
+</html>
